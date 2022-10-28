@@ -41,4 +41,3 @@ class Checkout extends SourceCheckout{
 }
 
 export default Checkout;
-
