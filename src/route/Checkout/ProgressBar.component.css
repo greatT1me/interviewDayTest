@@ -1,0 +1,70 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_bar {
+  width: 100%;
+  display: flex;
+  height: 40px;
+}
+
+.progress_bar_grid {
+  position: relative;
+  bottom: 100%;
+  width: 100%;
+  display: grid;
+  height: 40px;
+  grid-template-columns: auto 30px;
+  align-items: center;
+}
+
+.progress_bar_line {
+  display: flex;
+  background-color: lightgray;
+  height: 5px;
+  width: 100%;
+  display: flex;
+}
+
+.step_circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 5px;
+  color: gray;
+}
+
+.active_step {
+  background-color: red;
+  color: white;
+  transition: 1s;
+}
+
+.step_filler {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  -webkit-animation: fill_active_step 4s;
+          animation: fill_active_step 4s;
+}
+
+@-webkit-keyframes fill_active_step {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fill_active_step {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=ProgressBar.component.css.map */
